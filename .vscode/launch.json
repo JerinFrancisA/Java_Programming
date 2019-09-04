@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Armstong",
+            "request": "launch",
+            "mainClass": "Armstong"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Prime",
+            "request": "launch",
+            "mainClass": "Prime"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BigIntegerFact",
+            "request": "launch",
+            "mainClass": "BigIntegerFact"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Factorial",
+            "request": "launch",
+            "mainClass": "Factorial"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ZeroToEnd",
+            "request": "launch",
+            "mainClass": "ZeroToEnd"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Frequency",
+            "request": "launch",
+            "mainClass": "Frequency"
+        }
+    ]
+}
