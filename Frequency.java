@@ -20,5 +20,6 @@ public class Frequency {
             }
         }
         System.out.println(freq);
+        scan.close();
     }
 }

@@ -26,6 +26,8 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        name(new Scanner(System.in).nextInt());
+        Scanner in = new Scanner(System.in);
+        name(in.nextInt());
+        in.close();
     }
 }
