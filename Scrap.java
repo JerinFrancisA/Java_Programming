@@ -52,8 +52,52 @@ public class Scrap {
         }
         in.close();
     }
+
+    public static void fact() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number : ");
+        int n = in.nextInt(), dup1 = n, dup2 = n, f1 = 1, f2 = 1;
+        while(dup1 >= 1) {
+            f1 *= dup1--;
+        }
+        System.out.println("Fact using while : " + f1);
+        for(int i = 2; i <= dup2; i++) {
+            f2 *= i;
+        }
+        System.out.println("Fact using for : " + f2);
+        in.close();
+    }
+
+    public static void fibo() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number : ");
+        int n = in.nextInt(), f1 = 0, f2 = 1, f3 = 0;
+        f3 = f3 + 0;
+        if(n > 2) {
+            System.out.print("0 1 ");
+            while(n-- > 2) {
+                f3 = f1 + f2;
+                System.out.print(f3 + " ");
+                f1 = f2;
+                f2 = f3;
+            }
+        }
+        else {
+            if(n==0 || n==1) System.out.println("0");
+            if(n==2) System.out.println("0 1");
+        }
+        in.close();
+    }
+
+    public static void First50Prime() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number : ");
+        int n = in.nextInt();
+    }
     public static void main(String[] args) {
         // dups();
-        zeroMover();
+        // zeroMover();
+        // fact();
+        fibo();
     }
 }
