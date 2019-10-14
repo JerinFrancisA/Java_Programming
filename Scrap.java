@@ -31,13 +31,29 @@ public class Scrap {
     public static void zeroMover() {
         Scanner in = new Scanner(System.in);
         int a[] = new int[in.nextInt()];
+        int b[] = new int[a.length];
         for (int i = 0; i < a.length; i++) {
             a[i] = in.nextInt();
         }
-        
+        int c = 0, j = 0;
+        for (int var : a) {
+            if(var == 0) {
+                c++;
+            } else {
+                b[j++] = var;
+            }
+        }
+        for(int i = a.length-c; i<a.length; i++) {
+            b[i] = 0;
+        }
+        a = b;
+        for (int var : a) {
+            System.out.println(var);
+        }
         in.close();
     }
     public static void main(String[] args) {
-        dups();
+        // dups();
+        zeroMover();
     }
 }
