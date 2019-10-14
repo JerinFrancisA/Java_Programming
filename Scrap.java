@@ -92,20 +92,23 @@ public class Scrap {
     public static boolean isArmstrong() {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number : ");
-        int n = in.nextInt(), noOfDigits = 0, num = n, digit = 0;
+        int n = in.nextInt(), noOfDigits = 0, num = n, digit = 0, arms = 0;
         noOfDigits = noOfDigits+ 0; // Please ignore this stmt. This was aaded to remove warning in VS Code
         digit = digit + 0; // Please ignore this stmt. This was aaded to remove warning in VS Code
-        boolean ans = false;
+        arms = arms + 0; // Please ignore this stmt. This was aaded to remove warning in VS Code
         while(num != 0) {
             digit = num % 10;
             num = num / 10;
             noOfDigits++;
         }
-
-        
-        
+        num = n;
+        while(num != 0) {
+            digit = num % 10;
+            arms += Math.pow(digit, noOfDigits);
+            num = num / 10;
+        }    
         in.close();
-        return ans;
+        return arms == n;
     }
     public static void main(String[] args) {
         // dups();
