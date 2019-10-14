@@ -31,6 +31,7 @@ public class ZeroDayAttack {
 			item_quantity = in.nextInt();
 			System.out.println("Enter Item Price : ");
 			item_price = in.nextDouble();
+			in.close();
 		}
 		
 		private double calculateTax(int type, double price) {
