@@ -129,7 +129,7 @@ public class Scrap {
         System.out.println("original str : " + str);
         str.append("Merin");
         System.out.println("str.append() : " + str);
-        str = str.insert(5, "w");
+        str = str.insert(5, " w");
         System.out.println("str.insert() : " + str);
         str = str.replace(0, str.length(), "nireM nireJ");
         System.out.println("str.replace() : " + str);
@@ -143,6 +143,7 @@ public class Scrap {
         // fact();
         // fibo();
         // System.out.println(isArmstrong());
-        stringDemo();
+        // stringDemo();
+        stringBufferDemo();
     }
 }
