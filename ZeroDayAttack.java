@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ZeroDayAttack {
 
-	
 		private int item_id;
 		private String item_name;
 		private int item_type;
@@ -54,7 +53,6 @@ public class ZeroDayAttack {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		System.out.println("How many items : ");
 		int n = in.nextInt();

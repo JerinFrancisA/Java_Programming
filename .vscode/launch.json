@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ZeroDayAttack",
+            "request": "launch",
+            "mainClass": "ZeroDayAttack",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Scrap",
             "request": "launch",
             "mainClass": "Scrap",
