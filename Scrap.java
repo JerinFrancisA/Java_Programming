@@ -16,11 +16,14 @@ public class Scrap {
                 freq.put(a[i], 1);
             }
             else {
-                freq.put(a[i], a[i]+1);
+                freq.put(a[i], freq.get(a[i])+1);
             }
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i] + " : " + freq.get(a[i]));
+        System.out.print("DUPLICATES : \nElement       Frequency\n");
+        for (Map.Entry<Integer, Integer> var : freq.entrySet()) {
+            if(var.getValue() > 1) {
+                System.out.println(var.getKey() + "       :       " + var.getValue());
+            }
         }
         in.close();
     }

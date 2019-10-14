@@ -26,7 +26,6 @@ public class StudentDetails {
 	
 	void calculateMarks(int m) {
 		calculateMarks();
-		mar
 	}
 	
 	void calculateMarks(double m) {

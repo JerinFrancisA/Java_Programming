@@ -1,4 +1,3 @@
-package lab3;
 
 class Thread1 extends Thread{
 	public void run() {
