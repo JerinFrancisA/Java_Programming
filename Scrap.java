@@ -115,11 +115,27 @@ public class Scrap {
         String str = new String("    Jerin Francis   ");
         System.out.println("original str : " + str);
         System.out.println("str.length() : " + str.length());
+        str = str.trim();
         System.out.println("str.trim() : " + str.trim());
-        System.out.println("length after str.trim() : " + str.trim());
-        System.out.println("str.replace() : " + str.replace("Jerin", "Merin"));
+        System.out.println("length after str.trim() : " + str.length());
+        str = str.replace("Jerin", "Merin");
+        System.out.println("str.replace() : " + str);
         System.out.println("str.contains() : " + str.contains("Merin"));
         System.out.println("str.equals() : " + str.equals("Merin Francis"));
+    }
+
+    public static void stringBufferDemo() {
+        StringBuffer str = new StringBuffer("Jerin ");
+        System.out.println("original str : " + str);
+        str.append("Merin");
+        System.out.println("str.append() : " + str);
+        str = str.insert(5, "w");
+        System.out.println("str.insert() : " + str);
+        str = str.replace(0, str.length(), "nireM nireJ");
+        System.out.println("str.replace() : " + str);
+        str = str.reverse();
+        System.out.println("str.reverse() : " + str);
+        System.out.println("str.substring() : " + str.substring(6, str.length()));
     }
     public static void main(String[] args) {
         // dups();
@@ -127,5 +143,6 @@ public class Scrap {
         // fact();
         // fibo();
         // System.out.println(isArmstrong());
+        stringDemo();
     }
 }
