@@ -93,6 +93,8 @@ public class Scrap {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number : ");
         int n = in.nextInt();
+
+        in.close();
     }
     public static void main(String[] args) {
         // dups();
