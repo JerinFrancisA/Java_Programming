@@ -110,10 +110,22 @@ public class Scrap {
         in.close();
         return arms == n;
     }
+
+    public static void stringDemo() {
+        String str = new String("    Jerin Francis   ");
+        System.out.println("original str : " + str);
+        System.out.println("str.length() : " + str.length());
+        System.out.println("str.trim() : " + str.trim());
+        System.out.println("length after str.trim() : " + str.trim());
+        System.out.println("str.replace() : " + str.replace("Jerin", "Merin"));
+        System.out.println("str.contains() : " + str.contains("Merin"));
+        System.out.println("str.equals() : " + str.equals("Merin Francis"));
+    }
     public static void main(String[] args) {
         // dups();
         // zeroMover();
         // fact();
-        fibo();
+        // fibo();
+        // System.out.println(isArmstrong());
     }
 }
