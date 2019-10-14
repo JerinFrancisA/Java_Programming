@@ -89,12 +89,23 @@ public class Scrap {
         in.close();
     }
 
-    public static void First50Prime() {
+    public static boolean isArmstrong() {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number : ");
-        int n = in.nextInt();
+        int n = in.nextInt(), noOfDigits = 0, num = n, digit = 0;
+        noOfDigits = noOfDigits+ 0; // Please ignore this stmt. This was aaded to remove warning in VS Code
+        digit = digit + 0; // Please ignore this stmt. This was aaded to remove warning in VS Code
+        boolean ans = false;
+        while(num != 0) {
+            digit = num % 10;
+            num = num / 10;
+            noOfDigits++;
+        }
 
+        
+        
         in.close();
+        return ans;
     }
     public static void main(String[] args) {
         // dups();
