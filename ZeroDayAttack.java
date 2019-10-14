@@ -72,5 +72,6 @@ public class ZeroDayAttack {
 			System.out.println("INVOICE " + (i + 1) + " details : \n");
 			obj[i].printInvoice();
 		}
+		in.close();
 	}
 }
