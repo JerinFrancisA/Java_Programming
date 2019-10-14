@@ -17,18 +17,17 @@ public class ZeroDayAttack {
 		}
 		
 		void setDetails() {
-			System.out.println("success");
 			Scanner in = new Scanner(System.in);
 			System.out.println("Enter Item Details : \n");
 			System.out.println("Enter Item ID : ");
 			item_id = in.nextInt();
-			System.out.println("Enter Item Name : ");
+			System.out.print("Enter Item Name : ");
 			item_name = in.next();
-			System.out.println("Enter Item Type : ");
+			System.out.print("Enter Item Type : ");
 			item_type = in.nextInt();
-			System.out.println("Enter Item Quantity : ");
+			System.out.print("Enter Item Quantity : ");
 			item_quantity = in.nextInt();
-			System.out.println("Enter Item Price : ");
+			System.out.print("Enter Item Price : ");
 			item_price = in.nextDouble();
 			in.close();
 		}
