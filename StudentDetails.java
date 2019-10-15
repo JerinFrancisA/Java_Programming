@@ -8,9 +8,7 @@ public class StudentDetails {
 	int marksObtained;
 	static double maxMarks = 400;
 	
-	public StudentDetails() {
-		// TODO Auto-generated constructor stub
-	}
+	public StudentDetails() {}
 	
 	StudentDetails(String name, int roll_no, double[] subject) {
 		this.name = name;

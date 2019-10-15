@@ -19,7 +19,7 @@ public class ZeroDayAttack {
 		void setDetails() {
 			Scanner in = new Scanner(System.in);
 			System.out.println("Enter Item Details : \n");
-			System.out.println("Enter Item ID : ");
+			System.out.print("Enter Item ID : ");
 			item_id = in.nextInt();
 			System.out.print("Enter Item Name : ");
 			item_name = in.next();
@@ -55,7 +55,7 @@ public class ZeroDayAttack {
 		Scanner in = new Scanner(System.in);
 		System.out.println("How many items : ");
 		int n = in.nextInt();
-		ZeroDayAttack obj[] = new ZeroDayAttack[20];
+		ZeroDayAttack obj[] = new ZeroDayAttack[n];
 		for(int i = 0; i < n; i++) {
 			obj[i] = new ZeroDayAttack();
 		}
