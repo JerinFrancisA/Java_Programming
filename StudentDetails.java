@@ -17,10 +17,10 @@ public class StudentDetails {
 	}
 	
 	void calculateMarks() {
+		marksObtained = 0;
 		for(double m:subject) {
 			marksObtained += m;
 		}
-		System.out.println(marksObtained);
 	}
 	
 	void calculateMarks(int m) {
@@ -43,7 +43,7 @@ public class StudentDetails {
 	
 	void calculateMarks(int m1, int m2) {
 		calculateMarks();
-		marksObtained = marksObtained*(1.045 + 1.08);
+		marksObtained = marksObtained*(1.125);
 		if(marksObtained>400.0) {
 			marksObtained = 400.0;
 		}
