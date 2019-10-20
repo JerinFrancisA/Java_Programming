@@ -45,30 +45,61 @@ class Oct {
 class Hex {
     void toHex(int n) {
         String h = new String("");
+        String t = "";
         while (n > 0) {
-            h = Integer.toString(n % 16) + h;
-            switch (h) {
+            switch (Integer.toString(n%16)) {
+            case "0":
+                t = "0";
+                break;
+            case "1":
+                t = "1";
+                break;
+            case "2":
+                t = "2";
+                break;
+            case "3":
+                t = "3";
+                break;
+            case "4":
+                t = "4";
+                break;
+            case "5":
+                t = "5";
+                break;
+            case "6":
+                t = "6";
+                break;
+            case "7":
+                t = "7";
+                break;
+            case "8":
+                t = "8";
+                break;
+            case "9":
+                t = "9";
+                break;
             case "10":
-                h = "A";
+                t = "A";
                 break;
             case "11":
-                h = "B";
+                t = "B";
                 break;
             case "12":
-                h = "C";
+                t = "C";
                 break;
             case "13":
-                h = "D";
+                t = "D";
                 break;
             case "14":
-                h = "E";
+                t = "E";
                 break;
             case "15":
-                h = "F";
+                t = "F";
                 break;
             default:
                 break;
             }
+            h = t + h;
             n = n / 16;
         }
         System.out.println(h);
@@ -105,7 +136,7 @@ public class BinOctHex {
         b.fromBin("111111");
         o.toOct(5335);
         o.fromOct("1001011");
-        h.toHex(9345);
-        h.fromHex("ABCD2487F");
+        h.toHex(1234567);
+        h.fromHex("12D687");
     }
 }

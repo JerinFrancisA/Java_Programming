@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - QuadRoot",
+            "request": "launch",
+            "mainClass": "Root.QuadRoot",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BinOctHex",
             "request": "launch",
             "mainClass": "NumberConversion.BinOctHex",
