@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BinOctHex",
+            "request": "launch",
+            "mainClass": "NumberConversion.BinOctHex",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StudentDetails",
             "request": "launch",
             "mainClass": "StudentDetails",
