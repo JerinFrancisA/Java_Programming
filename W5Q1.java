@@ -1,7 +1,7 @@
 /**
  * W5Q1
  */
-class Thread1 extends Thread {
+class ThreadPrime extends Thread {
     static boolean isPrime(int n) {
         if (n == 2)
             return true;
@@ -14,11 +14,12 @@ class Thread1 extends Thread {
 
     public void run() {
         for (int i = 2; i <= 100; i++) {
-            if (isPrime(i))
+            if (isPrime(i)) {
                 System.out.println(i);
-            try {
-                Thread.sleep(500);
-            } catch (Exception e) {
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e) {
+                }
             }
         }
     }
@@ -41,7 +42,7 @@ class Thread2 extends Thread {
 public class W5Q1 {
 
     public static void main(String[] args) {
-        Thread1 t1 = new Thread1();
+        ThreadPrime t1 = new ThreadPrime();
         t1.start();
     }
 }
