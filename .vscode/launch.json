@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Stack",
+            "request": "launch",
+            "mainClass": "Stack",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CheckNumberPlate",
+            "request": "launch",
+            "mainClass": "VehicleNumberPlate.CheckNumberPlate",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - QuadRoot",
             "request": "launch",
             "mainClass": "Root.QuadRoot",
