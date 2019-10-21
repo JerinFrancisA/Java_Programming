@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PCJAVAPROGRAMMING",
+            "request": "launch",
+            "mainClass": "PCJAVAPROGRAMMING",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CorrectProducerConsumer",
+            "request": "launch",
+            "mainClass": "CorrectProducerConsumer",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WrongProducerConsumer",
+            "request": "launch",
+            "mainClass": "WrongProducerConsumer",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DummyThreadFun",
+            "request": "launch",
+            "mainClass": "DummyThreadFun",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Clock",
             "request": "launch",
             "mainClass": "Clock",
