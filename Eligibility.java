@@ -1,18 +1,33 @@
 import java.util.Scanner;
 
 class NotEligibleException extends Exception {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public String toString() {
 		return "Not Eligible";
 	}
 }
 
 class LowAttendanceException extends Exception {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public String toString() {
 		return "Insufficient Attendance";
 	}
 }
 
 class LowMarksException extends Exception {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public String toString() {
 		return "Insufficient Marks";
 	}
@@ -48,13 +63,14 @@ public class Eligibility {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter Marks and Attedance : ");
 		int marks = in.nextInt(), attendance = in.nextInt();
-		Exam student = new Exam();
+		Exam student = new Exam(marks, attendance);
 		try {
 			student.amiIEligibile();
 		} catch (NotEligibleException e) {
 			e.printStackTrace();
 			System.out.println(e.getCause());
 		}
+		in.close();
 	}
 
 }
