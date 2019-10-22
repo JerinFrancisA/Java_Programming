@@ -63,5 +63,6 @@ public class StudentDetails {
 		s.calculateMarks(2.0);
 		s.calculateMarks(1);
 		s.calculateMarks(1, 2);
+		in.close();
 	}
 }

@@ -1,12 +1,22 @@
 import java.util.Scanner;
 
 class DailyTransactionLimitException extends Exception {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public String toString() {
 		return "Daily Limit Exceeded (25,000)";
 	}
 }
 
 class InsufficientAmountException extends Exception {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public String toString() {
 		return "Insufficient Balance";
 	}
@@ -48,7 +58,8 @@ public class EventOne {
 		} catch (InsufficientAmountException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}	
+		}
+		in.close();
 	}
 
 }
