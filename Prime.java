@@ -37,6 +37,8 @@ public class Prime {
         }
     }
     public static void main(String[] args) {
-        printPrime(new Scanner(System.in).nextInt());
+        Scanner in = new Scanner(System.in);
+        printPrime(in.nextInt());
+        in.close();
     }
 }

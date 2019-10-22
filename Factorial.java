@@ -13,6 +13,7 @@ public class Factorial {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         findFactorial(scan.nextInt());
+        scan.close();
     }
     
 }

@@ -1,7 +1,3 @@
-
-
-import java.util.Scanner;
-
 class Handler {
 	int n;
 	boolean valueSet = false;
@@ -70,11 +66,6 @@ class JavaProgramming {
 		new JAVA(Handler);
 		new PROGRAMMING(Handler);
 		System.out.println("Press Control-C to stop.");
-		while(true) {
-			if(new Scanner(System.in).nextInt() == 1) {
-				System.exit(0);
-			}
-		}
 	}
 }
 

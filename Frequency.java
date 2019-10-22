@@ -5,13 +5,12 @@ public class Frequency {
         Scanner scan = new Scanner(System.in);
         Integer n = scan.nextInt();
         Integer arr[] = new Integer[n];
-        for (int i = 0; i < n; i++) {
+        for (int i=0; i < n; i++) {
             arr[i] = scan.nextInt();
         }
         Map<Integer, Integer> freq = new HashMap<Integer, Integer>();
         for (int var : arr) {
             Integer a = freq.get(var);
-            System.out.println(a);
             if (a == null) {
                 freq.put(var, 1);
             }

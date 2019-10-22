@@ -17,6 +17,7 @@ class TSec implements Runnable {
 
 class TMin implements Runnable {
     int m = 0;
+
     @Override
     public void run() {
         while (true) {
@@ -33,6 +34,7 @@ class TMin implements Runnable {
 
 class THour implements Runnable {
     int h;
+
     @Override
     public void run() {
         while (true) {
@@ -58,6 +60,6 @@ public class Clock {
         Thread h = new Thread(new THour());
         h.start();
         m.start();
-        s.start();        
+        s.start();
     }
 }
