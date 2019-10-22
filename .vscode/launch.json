@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TryJP",
+            "request": "launch",
+            "mainClass": "TryJP",
+            "projectName": "Java Programming_fe20bdca"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AtmAccount",
             "request": "launch",
             "mainClass": "AtmAccount",
