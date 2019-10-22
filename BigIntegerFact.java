@@ -12,7 +12,9 @@ public class BigIntegerFact {
     }
 
     public static void main(String[] args) {
-        int n = new Scanner(System.in).nextInt();
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
         factorial(n);
+        in.close();
     }
 }
