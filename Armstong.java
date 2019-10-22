@@ -15,6 +15,8 @@ public class Armstong {
         if(sum == n){System.out.println("YES");}else{System.out.println("NO");};
     }
     public static void main(String[] args) {
-        isArmstrong(new Scanner(System.in).nextInt());
+        Scanner in = new Scanner(System.in);
+        isArmstrong(in.nextInt());
+        in.close();
     }
 }
