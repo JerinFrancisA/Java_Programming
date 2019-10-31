@@ -1,0 +1,72 @@
+import java.lang.*;
+import java.util.*;
+
+public class thread {
+    public static void main(String args[]) throws InterruptedException {
+        final pc =new PC();
+        inkedList<Integer> list() = new LinkedList<>();                             //acts as buffer
+        int capacity=1;                                                              //buffer max size
+        Thread t1 = new Thread(new Runnable(){
+            public void run() {
+                try {
+                    pc.produce();
+                }
+                catch(InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        Thread t2 = new Thread(new Runnable(){
+            public void run() {
+                try {
+                    pc.consumer();
+                }
+                catch(InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        t1.start();
+        t2.start();
+
+        t1.join();
+        t2.join();
+    }
+
+   public static class PC {
+        
+        public void produce() throws InterruptedException{
+            int val=0;
+
+            while(true) {
+                synchronized (this) {                                                //only one thread can access at a time all the other threads trying to access will be put in the suspended list
+                    while(list.size==capacity)                                       
+                        wait();                                                      //tells the calling thread to give up lock and go to sleep until another thread comes and calls notify()
+                    System.out.println("producer added"+val);
+                    
+                    list.add(value++);                                           //add items to buffer
+
+                    notify();                                                    //notifies consumer that it can start consuming
+                            
+                }
+            }
+        }
+
+        public void consumer() throws InterruptedException {
+
+            while(true) {
+                synchronized (this) {
+                    while(list.size==0)
+                        wait();
+                    
+                    int val= list.removeFirst();
+
+                    System.out.println("consumed"+ val);
+
+                    notify();
+                    
+                }
+            }
+        }
+    }
+}
