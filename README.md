@@ -6,7 +6,8 @@ Threading programs to be added.
 
 ## Collaborators
 
-[Jerin Francis](https://github.com/JerinFrancisA)
-[Fawaz Hussain](https://github.com/fawazhussain)
+- [Jerin Francis](https://github.com/JerinFrancisA)
+
+- [Fawaz Hussain](https://github.com/fawazhussain)
 
 IF YOU WISH TO COLLABORATE PLEASE GO AHEAD AND MAKE A PULL REQUEST AND YOU CAN JOIN THE FUN !
